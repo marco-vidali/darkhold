@@ -1,12 +1,21 @@
 function init_light()
     light = {
         on = true,
+        off_time = 0,
+        cooldown = 1
     }
 end
 
 function update_light()
     if btnp(4) then
-        light.on = not light.on
+        if light.on then
+            light.off_time = time()
+            light.on = false
+        end
+
+        if not light.on and time() - light.off_time > light.cooldown then
+            light.on = true
+        end
     end
 end
 
