@@ -1,5 +1,9 @@
 game = {}
 
+-- set light green as transparent color
+palt(0, false)
+palt(11, true)
+
 function _init()
     show_level_1()
 end
