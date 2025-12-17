@@ -12,7 +12,7 @@ function show_level_2()
     timer.max = 50
 
     current_level = show_level_2
-    next_level = nil
+    next_level = show_level_3
 end
 
 function update_level_2()
