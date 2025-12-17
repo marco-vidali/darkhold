@@ -2,7 +2,7 @@ function init_timer()
     timer = {
         start = flr(time()),
         current = flr(time()),
-        max = 20
+        max = nil
     }
 end
 
