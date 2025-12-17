@@ -9,7 +9,7 @@ function show_level_3()
     map_offset_x = 34
     map_offset_y = 0
 
-    timer.max = 30
+    timer.max = 25
 
     current_level = show_level_3
     next_level = nil
