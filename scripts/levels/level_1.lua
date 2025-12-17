@@ -12,7 +12,7 @@ function update_level_1()
 end
 
 function draw_level_1()
-    cls(4)
+    map(0, 0)
     draw_player()
     draw_light()
 end
