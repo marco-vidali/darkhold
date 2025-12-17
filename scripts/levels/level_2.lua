@@ -1,6 +1,6 @@
-function show_level_1()
-    game.update = update_level_1
-    game.draw = draw_level_1
+function show_level_2()
+    game.update = update_level_2
+    game.draw = draw_level_2
 
     init_light()
     init_player()
@@ -8,16 +8,16 @@ function show_level_1()
     init_you_died()
     init_level_complete()
 
-    map_offset_x = 0
+    map_offset_x = 17
     map_offset_y = 0
 
-    timer.max = 20
+    timer.max = 50
 
-    current_level = show_level_1
-    next_level = show_level_2
+    current_level = show_level_2
+    next_level = nil
 end
 
-function update_level_1()
+function update_level_2()
     update_light()
     update_player()
     update_timer()
@@ -27,7 +27,7 @@ function update_level_1()
     end
 end
 
-function draw_level_1()
+function draw_level_2()
     map(map_offset_x, map_offset_y)
     draw_player()
     draw_light()

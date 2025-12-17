@@ -48,8 +48,8 @@ function colliding_with_flag(x, y, flag)
 
     for i = 0, w - 1 do
         for j = 0, h - 1 do
-            local tile_x = flr((x + i) / 8)
-            local tile_y = flr((y + j) / 8)
+            local tile_x = flr((x + i) / 8) + map_offset_x
+            local tile_y = flr((y + j) / 8) + map_offset_y
             local tile = mget(tile_x, tile_y)
 
             if fget(tile, flag) then

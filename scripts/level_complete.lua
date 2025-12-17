@@ -1,3 +1,7 @@
+function init_level_complete()
+    next_level = nil
+end
+
 function show_level_complete()
     game.update = update_level_complete
     game.draw = draw_level_complete
@@ -5,7 +9,7 @@ end
 
 function update_level_complete()
     if btnp(4) then
-        -- next level
+        next_level()
     end
 end
 

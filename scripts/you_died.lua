@@ -1,3 +1,7 @@
+function init_you_died()
+    current_level = nil
+end
+
 function show_you_died()
     game.update = update_you_died
     game.draw = draw_you_died
@@ -5,7 +9,7 @@ end
 
 function update_you_died()
     if btnp(4) then
-        show_level_1()
+        current_level()
     end
 end
 
