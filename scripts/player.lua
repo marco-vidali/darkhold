@@ -6,6 +6,15 @@ function init_player()
 end
 
 function update_player()
+    move()
+    die()
+end
+
+function draw_player()
+    spr(1, player.x, player.y)
+end
+
+function move()
     if light.on then return end
 
     local new_x = player.x
@@ -16,23 +25,26 @@ function update_player()
     if btn(2) then new_y -= 1 end
     if btn(3) then new_y += 1 end
 
-    if not solid_at(new_x, player.y) then
+    if not colliding_with_flag(new_x, player.y, 0) then
         player.x = new_x
     end
 
-    if not solid_at(player.x, new_y) then
+    if not colliding_with_flag(player.x, new_y, 0) then
         player.y = new_y
     end
 end
 
-function draw_player()
-    spr(1, player.x, player.y)
+function die()
+    if colliding_with_flag(player.x, player.y, 1) then
+        -- dead
+    end
 end
 
-function solid_at(x, y)
+function colliding_with_flag(x, y, flag)
+    local w = 6
+    local h = 8
+
     x += 1
-    w = 6
-    h = 8
 
     for i = 0, w - 1 do
         for j = 0, h - 1 do
@@ -40,7 +52,7 @@ function solid_at(x, y)
             local tile_y = flr((y + j) / 8)
             local tile = mget(tile_x, tile_y)
 
-            if fget(tile, 0) then
+            if fget(tile, flag) then
                 return true
             end
         end
