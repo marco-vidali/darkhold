@@ -2,7 +2,6 @@ function init_light()
     light = {
         on = true,
         off_time = 0,
-        cooldown = 1
     }
 end
 
@@ -13,7 +12,7 @@ function update_light()
             light.on = false
         end
 
-        if not light.on and time() - light.off_time > light.cooldown then
+        if not light.on and time() - light.off_time > 1 then
             light.on = true
         end
     end
