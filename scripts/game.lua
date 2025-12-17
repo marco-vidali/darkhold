@@ -5,7 +5,7 @@ palt(0, false)
 palt(11, true)
 
 function _init()
-    show_level_1()
+    show_you_died()
 end
 
 function _update()

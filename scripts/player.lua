@@ -36,7 +36,7 @@ end
 
 function die()
     if colliding_with_flag(player.x, player.y, 1) then
-        -- dead
+        show_you_died()
     end
 end
 
