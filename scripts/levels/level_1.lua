@@ -5,8 +5,6 @@ function show_level_1()
     init_light()
     init_player()
     init_timer()
-    init_you_died()
-    init_level_complete()
 
     map_offset_x = 0
     map_offset_y = 0

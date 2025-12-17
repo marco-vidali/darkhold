@@ -1,6 +1,4 @@
-function init_level_complete()
-    next_level = nil
-end
+next_level = nil
 
 function show_level_complete()
     game.update = update_level_complete

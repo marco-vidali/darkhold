@@ -1,6 +1,4 @@
-function init_you_died()
-    current_level = nil
-end
+current_level = nil
 
 function show_you_died()
     game.update = update_you_died
