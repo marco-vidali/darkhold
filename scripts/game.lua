@@ -5,7 +5,7 @@ palt(0, false)
 palt(11, true)
 
 function _init()
-    show_level_3()
+    show_level_4()
 end
 
 function _update()
