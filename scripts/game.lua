@@ -1,5 +1,8 @@
 game = {}
 
+-- load cart data
+cartdata("darkhold")
+
 -- set light green as transparent color
 palt(0, false)
 palt(11, true)

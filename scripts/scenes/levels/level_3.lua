@@ -2,6 +2,8 @@ function show_level_3()
     game.update = update_level_3
     game.draw = draw_level_3
 
+    dset(0, 3)
+
     init_light()
     init_player()
     init_timer()
