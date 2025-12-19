@@ -1,6 +1,8 @@
 pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
+-- darkhold
+-- marco vidali
 #include scripts/game.lua
 #include scripts/scenes/levels/level_1.lua
 #include scripts/light.lua
