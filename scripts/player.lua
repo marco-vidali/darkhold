@@ -1,7 +1,7 @@
 function init_player()
     player = {
-        x = 10,
-        y = 10,
+        x = 16,
+        y = 16,
     }
 end
 
