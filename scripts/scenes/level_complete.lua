@@ -14,9 +14,9 @@ end
 function draw_level_complete()
     cls()
     
-    print_centered("level completed!", 52, 7)
+    print_centered("level complete!", 52, 7)
 
     if time() % 1 < 0.5 then
-        print_centered("press 🅾️ to continue", 70, 7)
+        print_centered("press 🅾️ to continue", 64, 7)
     end
 end

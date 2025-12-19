@@ -14,9 +14,9 @@ function draw_game_complete()
     cls()
 
     print_centered("congratulations!", 46, 7)
-    print_centered("you have completed darkhold!", 58, 7)
+    print_centered("you have completed darkhold!", 52, 7)
 
     if time() % 1 < 0.5 then
-        print_centered("press 🅾️ to restart", 76, 7)
+        print_centered("press 🅾️ to restart", 64, 7)
     end
 end

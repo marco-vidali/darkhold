@@ -17,6 +17,6 @@ function draw_you_died()
     print_centered("you died", 52, 7)
     
     if time() % 1 < 0.5 then
-        print_centered("press 🅾️ to restart", 70, 7)
+        print_centered("press 🅾️ to restart", 64, 7)
     end
 end
