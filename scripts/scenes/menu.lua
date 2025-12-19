@@ -27,9 +27,9 @@ end
 function draw_menu()
     cls()
 
-    print("darkhold", 48, 52, 7)
+    print_centered("darkhold", 52, 7)
 
     if time() % 1 < 0.5 then
-        print("press 🅾️ to start", 32, 70, 7)
+        print_centered("press 🅾️ to start", 70, 7)
     end
 end
