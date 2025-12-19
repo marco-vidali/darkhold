@@ -2,17 +2,17 @@ pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
 #include scripts/game.lua
-#include scripts/levels/level_1.lua
+#include scripts/scenes/levels/level_1.lua
 #include scripts/light.lua
 #include scripts/player.lua
-#include scripts/you_died.lua
+#include scripts/scenes/you_died.lua
 #include scripts/timer.lua
-#include scripts/level_complete.lua
-#include scripts/levels/level_2.lua
+#include scripts/scenes/level_complete.lua
+#include scripts/scenes/levels/level_2.lua
 #include scripts/map_offset.lua
-#include scripts/levels/level_3.lua
-#include scripts/levels/level_4.lua
-#include scripts/levels/level_5.lua
+#include scripts/scenes/levels/level_3.lua
+#include scripts/scenes/levels/level_4.lua
+#include scripts/scenes/levels/level_5.lua
 __gfx__
 00000000bbb000bb00000000777777777070707077777777bbbbbbbb000000000000000000000000000000000000000000000000000000000000000000000000
 00000000bb00000b00000000777777770707070777777777bbbbbbbb000000000000000000000000000000000000000000000000000000000000000000000000
