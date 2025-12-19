@@ -26,6 +26,7 @@ end
 function draw_level_4()
     map(map_offset_x, map_offset_y)
     draw_player()
+    draw_timer()
 
     if time() % 2 < 1 then
         -- block 1
@@ -58,5 +59,4 @@ function draw_level_4()
     end
 
     draw_light()
-    draw_timer()
 end

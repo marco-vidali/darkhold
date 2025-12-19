@@ -26,6 +26,6 @@ end
 function draw_level_1()
     map(map_offset_x, map_offset_y)
     draw_player()
-    draw_light()
     draw_timer()
+    draw_light()
 end
