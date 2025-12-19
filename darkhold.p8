@@ -3,6 +3,7 @@ version 43
 __lua__
 -- darkhold
 -- marco vidali
+
 #include scripts/game.lua
 #include scripts/scenes/levels/level_1.lua
 #include scripts/light.lua
@@ -17,6 +18,7 @@ __lua__
 #include scripts/scenes/levels/level_5.lua
 #include scripts/scenes/menu.lua
 #include scripts/scenes/game_complete.lua
+#include scripts/scenes/instructions.lua
 __gfx__
 00000000bbb000bb00000000777777777070707077777777bbbbbbbb000000000000000000000000000000000000000000000000000000000000000000000000
 00000000bb00000b00000000777777770707070777777777bbbbbbbb000000000000000000000000000000000000000000000000000000000000000000000000

@@ -5,22 +5,20 @@ end
 
 function update_menu()
     if btnp(4) then
-        -- load last played level
-        local last_level = dget(0)
+        -- load next scene
+        local next_scene = dget(0)
 
-        if last_level == 0 then
-            last_level = 1
-        end
-
-        if last_level == 1 then
+        if next_scene == 0 then
+            show_instructions()
+        elseif next_scene == 1 then
             show_level_1()
-        elseif last_level == 2 then
+        elseif next_scene == 2 then
             show_level_2()
-        elseif last_level == 3 then
+        elseif next_scene == 3 then
             show_level_3()
-        elseif last_level == 4 then
+        elseif next_scene == 4 then
             show_level_4()
-        elseif last_level == 5 then
+        elseif next_scene == 5 then
             show_level_5()
         end
     end
