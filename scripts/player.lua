@@ -8,6 +8,7 @@ end
 function update_player()
     move()
     die()
+    level_complete()
 end
 
 function draw_player()
@@ -37,6 +38,12 @@ end
 function die()
     if colliding_with_flag(player.x, player.y, 1) then
         show_you_died()
+    end
+end
+
+function level_complete()
+    if colliding_with_flag(player.x, player.y, 2) then
+        show_level_complete()
     end
 end
 
