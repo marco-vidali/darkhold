@@ -13,6 +13,10 @@ end
 
 function draw_level_complete()
     cls()
-    print("level complete", 36, 50, 7)
-    print("press 🅾️ to continue", 24, 70, 7)
+    
+    print("level complete", 36, 52, 7)
+
+    if time() % 1 < 0.5 then
+        print("press 🅾️ to continue", 24, 70, 7)
+    end
 end

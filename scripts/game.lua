@@ -8,7 +8,7 @@ palt(0, false)
 palt(11, true)
 
 function _init()
-    show_game_complete()
+    show_menu()
 end
 
 function _update()

@@ -13,6 +13,10 @@ end
 
 function draw_you_died()
     cls()
-    print("you died", 48, 50, 7)
-    print("press 🅾️ to restart", 28, 70, 7)
+
+    print("you died", 48, 52, 7)
+    
+    if time() % 1 < 0.5 then
+        print("press 🅾️ to restart", 28, 70, 7)
+    end
 end
