@@ -4,11 +4,19 @@ function show_game_complete()
 end
 
 function update_game_complete()
+    if btnp(5) then
+        dset(0, 0)
+        show_menu()
+    end
 end
 
 function draw_game_complete()
     cls()
 
-    print("congratulations!", 32, 50, 7)
-    print("you have completed darkhold!", 12, 60, 7)
+    print("congratulations!", 32, 46, 7)
+    print("you have completed darkhold!", 12, 58, 7)
+
+    if time() % 1 < 0.5 then
+        print("press ❎ to restart", 26, 76, 7)
+    end
 end
