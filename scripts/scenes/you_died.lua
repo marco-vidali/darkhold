@@ -17,6 +17,6 @@ function draw_you_died()
     print("you died", 48, 52, 7)
     
     if time() % 1 < 0.5 then
-        print("press 🅾️ to restart", 28, 70, 7)
+        print("press 🅾️ to restart", 26, 70, 7)
     end
 end

@@ -32,6 +32,6 @@ function draw_menu()
     print("darkhold", 48, 52, 7)
 
     if time() % 1 < 0.5 then
-        print("press 🅾️ to start", 30, 70, 7)
+        print("press 🅾️ to start", 32, 70, 7)
     end
 end
