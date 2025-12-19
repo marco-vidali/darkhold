@@ -14,7 +14,7 @@ function show_level_5()
     timer.max = 60
 
     current_level = show_level_5
-    next_level = nil
+    next_level = show_game_complete
 end
 
 function update_level_5()
